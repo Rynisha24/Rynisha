@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>SHOP</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color:#b3b3cc;
+        }
+        
+        header {
+            background-color: black;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+		link {
+			display: none;
+		}
+		.center {
+			text-align:center;
+		}
+        nav {
+            background-color: Pink;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav a {
+            color: Black;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            background-color: white;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 15px 0;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-image img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 5px;
+        }
+
+        .product-name {
+            font-size: 1.4em;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .product-price {
+            font-size: 1.2em;
+            color: Green;
+            margin-bottom: 20px;
+        }
+
+        .add-to-cart {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 15px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .add-to-cart:hover {
+            background-color: #555;
+        }
+
+        footer {
+		background-color: Black;
+		color: white;
+		text-align: center;
+		padding: 20px;
+	}
+		footer {
+		display: block;
+		unicode-bidi: isolate;
+	}
+    </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <h1>R&N Fashion Store</h1>
+    <p>Your favorite place to shop for trendy clothes</p>
+</header>
+
+<!-- Navigation -->
+<nav>
+    <a href="HOME.html">Home</a>
+    <a href="SHOP.html">Shop</a>
+    <a href="#">About Us</a>
+    
+</nav>
+
+<!-- Main Content -->
+<div class="container">
+    <div class="product-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://img.freepik.com/premium-vector/illustration-fashion-design-graphic-background-vector-print-textile-art-vintage-retro-whi_1013341-231267.jpg?uid=R175635580&ga=GA1.1.1800864336.1732359452&semt=ais_hybrid" alt="Product">
+            </div>
+            <div class="product-info">
+                <p class="product-name">Men's Clothing</p>
+                <a href="Mens.html"> <button class="add-to-cart">GO TO ➡</button></a>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://img.freepik.com/premium-vector/vector-illustration-girl-fashion-collection-apparel-set-cartoon-clothes-clothing-dress-gr_1013341-47964.jpg" alt="Product">
+            </div>
+            <div class="product-info">
+                <p class="product-name">Women's Clothing</p>
+                <a href="Womens.html"> <button class="add-to-cart">GO TO ➡</button></a>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <div class="product-image">
+                <img src="https://img.freepik.com/premium-photo/flat-lay-top-view-office-table-desk-frame-feminine-desk-workspace-with-laptop-clutch-cosmetics-phone-sunglasses-lipstick-rose-buds-white-background_408798-6549.jpg?semt=ais_hybrid" alt="Product">
+            </div>
+            <div class="product-info">
+                <p class="product-name">Accessories</p>
+                <button class="add-to-cart">GO TO ➡</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 R&N Fashion Store | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
